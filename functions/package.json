@@ -1,0 +1,22 @@
+{
+  "name": "devroad-functions",
+  "description": "Firebase Functions backend for AI Developer Roadmap Generator",
+  "engines": {
+    "node": "20"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "start": "node index.js",
+    "deploy": "firebase deploy --only functions",
+    "lint": "echo 'no lint configured'"
+  },
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "firebase-admin": "^12.5.0",
+    "firebase-functions": "^5.0.0"
+  }
+}
+
